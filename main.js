@@ -58,6 +58,10 @@ function drawPoint() {
 function drawPointIfMousePressed() {
   if (mouseIsPressed) {
     drawPoint();
+    previousPoint = {
+      x: -mouseX,
+      y: -mouseY
+    }
   }
 }
 
